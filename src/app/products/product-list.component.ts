@@ -13,7 +13,7 @@ export class ProductListComponent{
 
   {
     'productId':2,
-    'productNmae': 'Garden Cart',
+    'productName': 'Garden Cart',
     'productCode': 'GDN-0023',
     'releaseDate': 'March 18, 2021',
     'description':'15 gallons capacity rolling',
@@ -23,7 +23,7 @@ export class ProductListComponent{
   },
   {
     'productId':5,
-    'productNmae': 'Hammer',
+    'productName': 'Hammer',
     'productCode': 'GDN-004389',
     'releaseDate': 'June 18, 2023',
     'description':'Steel Curved hammer',
