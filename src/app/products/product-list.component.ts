@@ -19,7 +19,7 @@ export class ProductListComponent{
     'description':'15 gallons capacity rolling',
     'price': 23.43,
     'starRating':4.2,
-    'imageUrl':'assets/images/garden_cart.png'
+    'imageUrl':'assets/images/garden_cart.jpeg'
   },
   {
     'productId':5,
@@ -29,7 +29,7 @@ export class ProductListComponent{
     'description':'Steel Curved hammer',
     'price': 6.43,
     'starRating':4.8,
-    'imageUrl':'assets/images/hammer.png'
+    'imageUrl':'assets/images/hammer.jpeg'
   }
  ];
 }
