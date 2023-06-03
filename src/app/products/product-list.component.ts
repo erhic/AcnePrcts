@@ -9,7 +9,9 @@ import  {Component}from '@angular/core'
 
 export class ProductListComponent{
   pageTitle:string = 'Product List';
-  imageWidth: number = 50;
+  imageWidth: number = 40;
+  imageMargin: number =2;
+  showImage:boolean=false;
  products:any[] =[
 
   {
@@ -33,4 +35,10 @@ export class ProductListComponent{
     'imageUrl':'assets/images/hammer.jpeg'
   }
  ];
+
+ // write after properties
+toogleImage():void{
+this.showImage = !this.showImage  // this method changes the boolean value  of showImage to true and now you can be able to view the images because the *ngIf condition has beeen set to true , hence display element.
+ };
+
 }

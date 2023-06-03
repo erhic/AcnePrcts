@@ -15,7 +15,7 @@
       <table class="table" *ngIf='products.length'>
         <thead>
           <tr>
-            <th><button class="btn btn-primary">Show image</button></th>
+            <th><button class="btn btn-primary" (click)="toogleImage()">{{showImage?'Hide':'Show'}} image</button></th>
             <th>Product</th>
             <th>Code</th>
             <th>Available</th>
@@ -26,7 +26,8 @@
         <tbody>
           <tr *ngFor='let product of products'>
             <td>
-              <img [src]="product.imageUrl" [style.width.px]="imageWidth" [title]="product.productName">
+              <img *ngIf="showImage" [src]="product.imageUrl" [style.width.px]="imageWidth"
+                [style.margin.px]="imageMargin" [title]="product.productName">
             </td>
             <td>{{product.productName}}</td>
             <td>{{product.productCode}}</td>
