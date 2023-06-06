@@ -44,7 +44,7 @@ toogleImage():void{
 this.showImage = !this.showImage  // this method changes the boolean value  of showImage to true and now you can be able to view the images because the *ngIf condition has beeen set to true , hence display element.
  };
  ngOnInit(): void {
-   
+   console.log('onit here')
  }
 
 }
