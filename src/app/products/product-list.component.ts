@@ -1,4 +1,4 @@
-import  {Component}from '@angular/core'
+import  {Component, OnInit}from '@angular/core'
 import { IProduct } from './prooduct';
 
 @Component({
@@ -9,7 +9,7 @@ import { IProduct } from './prooduct';
 
 })
 
-export class ProductListComponent{
+export class ProductListComponent implements OnInit{
   pageTitle:string = 'Product List';
   imageWidth: number = 40;
   imageMargin: number =2;
@@ -43,5 +43,8 @@ export class ProductListComponent{
 toogleImage():void{
 this.showImage = !this.showImage  // this method changes the boolean value  of showImage to true and now you can be able to view the images because the *ngIf condition has beeen set to true , hence display element.
  };
+ ngOnInit(): void {
+   
+ }
 
 }
